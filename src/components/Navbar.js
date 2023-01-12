@@ -1,4 +1,6 @@
-function Navbar(props) {
+import {Link} from "react-router-dom";
+
+function Navbar() {
     return (
         <>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -23,12 +25,7 @@ function Navbar(props) {
                                     Dropdown
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="/">Action</a></li>
-                                    <li><a className="dropdown-item" href="/">Another action</a></li>
-                                    <li>
-                                        <hr className="dropdown-divider"/>
-                                    </li>
-                                    <li><a className="dropdown-item" href="/">Something else here</a></li>
+                                    <li><Link className="dropdown-item" to="/admin/github">Github</Link></li>
                                 </ul>
                             </li>
                             <li className="nav-item">
